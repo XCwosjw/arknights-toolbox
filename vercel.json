@@ -1,0 +1,10 @@
+{
+  "github": {
+    "silent": true
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/api/proxy/.*", "dest": "/api/proxy" },
+    { "src": "/(.*)", "status": 404 }
+  ]
+}
